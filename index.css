@@ -16,6 +16,23 @@ h2{
     font-size: large;
 }
 
+label{
+    display: block;
+    margin-top: 20px;
+    color: grey;
+}
+
+#password-length{
+    width: 60px;
+    padding: 8px;
+    margin: 8px 0 0 0;
+    border-radius: 5px;
+    border: 1px solid #2B3A4B;
+    background-color: #2B3A4B;
+    color: white;
+    font-size: medium;
+}
+
 .btn-el{
     color: white;
     background-color: #2EB872;
@@ -23,7 +40,7 @@ h2{
     border-radius: 5px;
     width: 200px;
     height: 38px;
-    margin: 60px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     font-size: medium;
 }
 
@@ -51,7 +68,15 @@ h2{
     color: #2EB872;
     background-color: #2B3A4B;
     border-radius: 5px;
+    box-sizing: border-box;
     width: 200px;
-    height: 30px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
     padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }

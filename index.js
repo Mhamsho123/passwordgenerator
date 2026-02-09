@@ -2,7 +2,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 passOne = document.getElementById("password-one");
-passTwo = document.getElementById("password-two")
+passTwo = document.getElementById("password-two");
+lengthInput = document.getElementById("password-length");
 
 let passwordOne = "";
 let passwordTwo = "";
@@ -16,8 +17,10 @@ function passwordGenerator(){
 
 function generationOne(){
     passwordOne = ""; 
-    let randomNum = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
-    for(let i=0; i<randomNum; ++i){
+    let length = parseInt(lengthInput.value) || 15;
+    if (length < 8) length = 8;
+    if (length > 32) length = 32;
+    for(let i=0; i<length; ++i){
         let randomizeVar = Math.floor(Math.random()* characters.length)
         let password = characters[randomizeVar]
         passwordOne += password
@@ -28,12 +31,13 @@ function generationOne(){
 
 function generationTwo(){
     passwordTwo = "";
-    let randomNum = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
-    for(let i=0; i<randomNum; ++i){
+    let length = parseInt(lengthInput.value) || 15;
+    if (length < 8) length = 8;
+    if (length > 32) length = 32;
+    for(let i=0; i<length; ++i){
         let randomizeVar = Math.floor(Math.random()* characters.length)
         let password = characters[randomizeVar]
         passwordTwo += password
     }
     passTwo.textContent = passwordTwo;
-
 }
