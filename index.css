@@ -21,11 +21,37 @@ h2{
     background-color: #2EB872;
     border: none;
     border-radius: 5px;
-    width: 150px;
-    height: 30px;
-    margin: 15px 0px;
+    width: 200px;
+    height: 38px;
+    margin: 60px 0px 0px 0px;
+    font-size: medium;
 }
 
 .btn-el:hover{
     border: 2px solid black;
+}
+
+.line-el{
+    border-top: 2px solid #2B3A4B ;
+    margin-top: 50px;
+}
+
+
+.password-el{
+    display: flex;
+    gap: 40px;
+    margin: 50px 0px;
+}
+
+.password-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    color: #2EB872;
+    background-color: #2B3A4B;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
 }

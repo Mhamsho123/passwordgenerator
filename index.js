@@ -16,7 +16,7 @@ function passwordGenerator(){
 
 function generationOne(){
     passwordOne = ""; 
-    let randomNum = Math.floor(Math.random() * (50 - 15 + 1)) + 15;
+    let randomNum = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
     for(let i=0; i<randomNum; ++i){
         let randomizeVar = Math.floor(Math.random()* characters.length)
         let password = characters[randomizeVar]
@@ -28,7 +28,7 @@ function generationOne(){
 
 function generationTwo(){
     passwordTwo = "";
-    let randomNum = Math.floor(Math.random() * (50 - 15 + 1)) + 15;
+    let randomNum = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
     for(let i=0; i<randomNum; ++i){
         let randomizeVar = Math.floor(Math.random()* characters.length)
         let password = characters[randomizeVar]
