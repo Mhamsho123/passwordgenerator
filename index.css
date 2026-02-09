@@ -1,0 +1,31 @@
+
+body{
+    background-color: #212836;
+    color: white;
+    margin: 250px 100px;
+    font-size: larger;
+    font-family: "Inter", sans-serif;
+}
+
+span{
+    color: #2EB872;
+}
+
+h2{
+    color: grey;
+    font-size: large;
+}
+
+.btn-el{
+    color: white;
+    background-color: #2EB872;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin: 15px 0px;
+}
+
+.btn-el:hover{
+    border: 2px solid black;
+}
